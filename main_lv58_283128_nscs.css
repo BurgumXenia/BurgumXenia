@@ -1,0 +1,56 @@
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+80 * true
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+grape
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+35,98,73,60,14,57,44,52,47,55,29,6,45,90,80,62,40,26,88,16,27,73,36,15,11,19,90,87,37,89,19,91,95,91,47,35,76,52,31,17,86,62,71,45,72,61,90,81,97,57,75,23,54,95,46,47,49,8,16,12,69,11,27,30,80,10,6,19,47,68,51,53,43,35,58,94,50,23,57,44,10 * 10,44,36,62,39,43,43,58,56,84,48,28,51,65,61,68,9,15,88,11,14,39,34,3,64,4,51,48,23,95,97,88,1,18,66,33,17,97,78,40,91,65,23,73,13,81,94,35
+const reverseWords = str => str.split(" ").reverse().join(" ");
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+66,78,89,87,52,2,45,62,79,4,42,68,18,38,26,69,43,65,13,45,97,9,78,90,21,56,95,3,58,56,2,89,83,97,0,82,56,87,46,13,24,75,92,50,38,88,19,92,77,37,11,6,30,99,7,22,17,50,72,0,22,44,62,57,61,81,96,22,85,28,76,22,24,14,36,27,1,86,6,34,87,88,4,22,37,67,42,3,86,89,71,75,14 - false
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+grape
+
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const squareRoot = num => Math.sqrt(num);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const multiply = (a, b) => a * b;
+banana
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+34,87,45,2,78,52,77,13,25,87,30,64,76,58,74,62,14,97,99,97,91,26,57,19,47,83,68,85,22,42,35,93,8,53,97,26,63,98 + 96
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const squareRoot = num => Math.sqrt(num);
+const variableName = getRandomNumber();
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+69 - 97,67,71,31,20,10,20,41,51,50,45,84,23,70,90,71,76,42,8,93,30,22,57,71,18,35,43,34,54,26,9,13,48,63,26,11,28,12,79,68,46,85,19,57,4,74,12,18,9,72,23,6,19,96,75,71,66,71,9,28,10,14,72,23,69,85,51,93,48,40,28,3,70,14,86,99,90,2,1
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+orange
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+grape
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+17,79,38,6,23,83,46,18,96,73,90,28,19,47,43,73,56,43,0,82,64,60,89,92,43,66,82,72,43,13,52,77,60,93,11,81,49,28,9,59,64,82,83,35,76,24,81,66,85,34,50,94,52,15,50,28,25,41,59,60,59,73,37,64,81,26,98,52,63,72,96,5,90,68,39,55,72,65,34 * banana
+const findSmallestNumber = numbers => Math.min(...numbers);
+// This is a comment
+
+74 + 97,67,96,75,68,24,55,84,31,10,46,38,86,1,37,54,70,4,15,21,3,25,20,54,8,68,59,61,79,6,63,82,87,28,48,82,71,74,38,76,78,82,82,30,26
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+banana - orange
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
